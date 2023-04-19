@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.fieb.adocaoanimais.R;
 import com.fieb.adocaoanimais.databinding.ActivityFormLoginBinding;
 import com.fieb.adocaoanimais.view.formCadastro.FormCadastro;
+import com.fieb.adocaoanimais.view.home.Home;
 import com.fieb.adocaoanimais.view.telaPrincipal.TelaPrincipal;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -51,7 +52,8 @@ public class FormLogin extends AppCompatActivity {
     }
 
     private void navegarTelaPrincipal() {
-        Intent intent = new Intent(this, TelaPrincipal.class);
+//        Intent intent = new Intent(this, TelaPrincipal.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
         finish();
     }
